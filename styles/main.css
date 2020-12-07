@@ -11,3 +11,59 @@ body, html {
 .landingCarousel {
     opacity: .5;
 }
+@font-face {
+    font-family: 'newyorkregular';
+    src: url('newyork-webfont.woff2') format('woff2'),
+         url('newyork-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .container {
+    position: relative;
+    width: 100%;
+  }
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+  }
+  .container:hover .overlay {
+    opacity: .7;
+  }
+  .text {
+    color: #26140c;
+    font-size: 27px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  /* text Colors: #3a2219 chestnut, #26140c darkest brown
+  decorative colors: off white #362e2a, beige #d7caba, clean white #f4f4f1  */
