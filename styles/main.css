@@ -1,6 +1,22 @@
+@font-face {
+  font-family: "NewYork";
+  src: url("../assets/fonts/NewYork.eot");
+  src: url("../assets/fonts/NewYork.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/NewYork.otf") format("opentype"),
+    url("../assets/fonts/NewYork.svg") format("svg"),
+    url("../assets/fonts/NewYork.ttf") format("truetype"),
+    url("../assets/fonts/NewYork.woff") format("woff"),
+    url("../assets/fonts/NewYork.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body, html {
     margin: 0%;
     padding: 0%;
+    font-family: 'NewYork';
+    background-color: #f4f4f1;
+    color: #3a2219;
 }
 
 /* .container {
@@ -11,3 +27,52 @@ body, html {
 .landingCarousel {
     opacity: .5;
 }
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .container {
+    position: relative;
+    width: 100%;
+  }
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+  }
+  .container:hover .overlay {
+    opacity: .7;
+  }
+  .text {
+    color: #26140c;
+    font-size: 27px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  /* text Colors: #3a2219 chestnut, #26140c darkest brown
+  decorative colors: off white #362e2a, beige #d7caba, clean white #f4f4f1  */

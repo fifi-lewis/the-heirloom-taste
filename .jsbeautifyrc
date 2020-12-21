@@ -1,0 +1,9 @@
+{
+    "beautify.language": {
+      "html": {
+        "type": ["htm", "html"],
+        "filename": [".jshintrc", ".jsbeautifyrc"],
+        "indent": 2
+      }
+    }
+  }
