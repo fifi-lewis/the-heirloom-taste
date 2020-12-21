@@ -1,6 +1,22 @@
+@font-face {
+  font-family: "NewYork";
+  src: url("../assets/fonts/NewYork.eot");
+  src: url("../assets/fonts/NewYork.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/NewYork.otf") format("opentype"),
+    url("../assets/fonts/NewYork.svg") format("svg"),
+    url("../assets/fonts/NewYork.ttf") format("truetype"),
+    url("../assets/fonts/NewYork.woff") format("woff"),
+    url("../assets/fonts/NewYork.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body, html {
     margin: 0%;
     padding: 0%;
+    font-family: 'NewYork';
+    background-color: #f4f4f1;
+    color: #3a2219;
 }
 
 /* .container {
@@ -11,14 +27,7 @@ body, html {
 .landingCarousel {
     opacity: .5;
 }
-@font-face {
-    font-family: 'newyorkregular';
-    src: url('newyork-webfont.woff2') format('woff2'),
-         url('newyork-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
-}
 .column {
     float: left;
     width: 33.33%;
